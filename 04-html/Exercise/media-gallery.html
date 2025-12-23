@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
+    <style>
+        .Gallery{
+            display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+        }
+        .Gallery img:hover {
+    transform: scale(1.05);
+        }
+        .Gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+    </style>
+</head>
+<body>
+    <h2 style="color: blueviolet; text-align: center;"> Image Gallery</h2>
+    <div class="Gallery">
+        <img src="mahendra.jpg">
+        <img src="chandu.jpg">
+        <img src="gowtham.jpg">
+        <img src="Naresh.jpg">
+        <img src="chaithu.jpg">
+        <img src="shashank.jpg">
+        <img src="Rupeesh.jpg">
+        <img src="mukesh.jpg">
+        <img src="mahendra.jpg">
+        <img src="chandu.jpg">
+        <img src="gowtham.jpg">
+        <img src="Naresh.jpg">
+        
+        <img src="chaithu.jpg">
+        <img src="shashank.jpg">
+        <img src="Rupeesh.jpg">
+
+       
+    </div>
+
+    <h1 style="text-align: center; color: burlywood;">Audio Section </h1>
+    <div>
+        <audio controls style="text-align: center;display: block;
+        width: 500px; margin: 0 auto;">
+            <source src="Gira Gira Gingiraagirey.mp3" >
+        </audio><br><br>
+        <audio controls style="text-align: center;display: block;width: 500px; margin: 0 auto;">
+            <source src="Sallangundaale.mp3" >
+        </audio><br><br>
+        <audio controls style="text-align: center;display: block;
+        width: 500px; margin: 0 auto;">
+            <source src="Gira Gira Gingiraagirey.mp3" >
+        </audio><br><br>
+        <audio controls style="text-align: center; display: block; width: 500px; margin: 0 auto;">
+            <source src="I am A Champion.mp3" >
+        </audio>
+    </div>
+    <h1 style="text-align: center;color: brown;"> Video Section</h1>
+    <div style="width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px; display: flex;">
+        <video controls style="width:350px; height: 350px;margin: 0 auto; padding: 25px;">
+            <source src="video1.mp4">
+        </video>
+        <video controls src="video2.mp4" style="width: 350px; height:350px;padding: 20px;"></video>
+        <video controls src="video3.mp4" style="width: 350px; height:350px;padding: 20px;" ></video>
+    </div>
+</body>
+</html>

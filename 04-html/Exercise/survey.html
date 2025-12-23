@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body style="background-color:rgb(31, 86, 86); color: white;"">
+    <h1 style="text-align: center;">Customer Satisfaction Survey</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname" >First Name:</label>
+        <input type="text" minlength="2" maxlength="100"><br><br>
+        <label for="E-Mail">E-Mail:</label>
+        <input type="email"><br><br>
+        <label for="phone">Phone NO:</label>
+        <input type="number"><br><br>
+        <label for="age">Age Range:</label>
+        <select>
+            <option value="Under 18">Under 18</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55+">55+</option>
+               </select>
+        <br><br>
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio">
+        <label>Male</label><br><br>
+        <input type="radio">
+        <label>Female</label><br><br>
+        <input type="radio">
+        <label for="perfrt">Prefer To Say No</label>
+    </fieldset>
+    <fieldset>
+        <legend>Product Feedback</legend>
+        <h2> Products Used:</h2><br>
+        <input type="checkbox">
+        <label>Product A - Web Application</label><br><br>
+        <input type="checkbox">
+        <label>Product B - Mobile Application</label><br><br>
+        <input type="checkbox">
+        <label>Product C - Desktop Software</label><br><br>
+        <input type="checkbox">
+        <label>Product D - API Servers</label><br><br>
+        <input type="checkbox">
+        <label>Product E - Cloud Storage</label><br><br><br>
+        <h3>Primary Product</h3>
+        <select>
+            <option>Web Application</option>
+            <option>Mobile Application</option>
+            <option>Desktop Software</option>
+            <option>API Servers</option>
+            <option>Cloud Storage</option>
+            <br> <br> <br> <br>
+        </select>
+        <label><h4> How Long Have You Been A Customer?</h4></label>
+        <select>
+            <option value="">Less than 1 month</option>
+            <option value="">1-6 months</option>
+            <option value="">6-12 months</option>
+            <option value="">1-2 years</option>
+            <option value="">More than 2 years
+</option>
+
+        </select>
+
+    </fieldset>
+    <fieldset>
+        <legend>Satisfaction Rating:</legend>
+        <h3> Overall Satisfaction:</h3>
+        <input type="radio" name="overall">
+        <label>⭐</label><br><br>
+        <input type="radio" name="overall">
+        <label>⭐⭐</label><br><br>
+        <input type="radio" name="overall">
+        <label>⭐⭐⭐</label><br><br>
+        <input type="radio" name="overall">
+        <label>⭐⭐⭐⭐</label><br><br>
+        <input type="radio" name="overall">
+        <label>⭐⭐⭐⭐</label><br><br>
+        <h3>Products Quality:</h3>
+        <label for="quality">Product Quality (1–10):</label><br>
+        <input type="range" id="quality" name="quality" min="1" max="10">
+        <h3>Customer Support:</h3>
+        <label for="quality">Customer Support (1–10):</label><br>
+        <input type="range" id="quality" name="quality" min="1" max="10">
+        <h3>Value for Money:</h3>
+        <label for="quality">Value for Money(1–10):</label><br>
+        <input type="range" id="quality" name="quality" min="1" max="10">
+        <h3>Would you recommend us?</h3>
+        <input type="radio">
+        <label>Definitely</label><br><br>
+        <input type="radio">
+        <label>Probably</label><br><br>
+        <input type="radio">
+        <label>Not sure</label><br><br>
+        <input type="radio">
+        <label>Probably not</label><br><br>
+        <input type="radio">
+        <label> Definitely not</label><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Detailed Feedback
+        </legend>
+        <label><h4> What Do You Like Most?</h4></label>
+        <textarea rows="4" maxlength="500"></textarea><br> <br>
+        <label><h4> What can we improve?</h4></label>
+        <textarea rows="4" maxlength="500"></textarea>
+        <label><h4> Additional Comments </h4></label>
+        <textarea rows="6" maxlength="1000"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Contact Preferences
+        </legend>
+        <h3>Preferred Contact Method :-</h3>
+        <input type="checkbox">
+        <label>E-Mail</label><br> <br>
+        <input type="checkbox">
+        <label>Phone</label><br> <br>
+        <input type="checkbox">
+        <label>SMS</label><br> <br>
+        <input type="checkbox">
+        <label>No Contact</label><br> <br>
+        <h3> Best Time to Contact - select (multiple):</h3>
+        <input type="checkbox">
+        <label>Morning (9am-12pm)</label><br><br>
+        <input type="checkbox">
+        <label>Afternoon (12pm-5pm)</label><br><br>
+        <input type="checkbox">
+        <label>Evening (5pm-8pm)</label><br><br>
+        
+        <label><h3>Subscribe to Newsletter</h3></label> <input type="checkbox"><br><br> 
+        <input type="checkbox">
+        <label><b>Agree To Terms</b></label><br> <br> <br>
+</fieldset>
+<br> <br> <br>
+    </form>
+</body>
+</html>
