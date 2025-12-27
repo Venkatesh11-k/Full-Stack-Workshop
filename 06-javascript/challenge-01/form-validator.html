@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Form Validator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        .success {
+            border: 2px solid green;
+        }
+
+        .invalid {
+            border: 2px solid red;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .check {
+            color: green;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<form id="registerForm">
+    <h2>Register</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <div class="error" id="username-error"></div>
+
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="email-error"></div>
+
+    <input type="password" id="password" placeholder="Password">
+    <div class="error" id="password-error"></div>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <div class="error" id="confirm-error"></div>
+
+    <button type="submit" disabled>Submit</button>
+</form>
+
+<script src="form-validator.js"></script>
+</body>
+</html>

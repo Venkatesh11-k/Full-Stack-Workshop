@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Counter</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .counter-box {
+            border: 2px solid #333;
+            padding: 20px;
+            width: 260px;
+            text-align: center;
+        }
+
+        #count {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .steps button {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="counter-box">
+    <div id="count">0</div>
+
+    <div>
+        <button id="decrement">-</button>
+        <button id="reset">Reset</button>
+        <button id="increment">+</button>
+    </div>
+
+    <p>Step:</p>
+    <div class="steps">
+        <button data-step="1">1</button>
+        <button data-step="5">5</button>
+        <button data-step="10">10</button>
+    </div>
+</div>
+
+<script src="counter.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List with Categories</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        input, select, button {
+            padding: 6px;
+            margin: 5px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .completed span {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .delete {
+            color: red;
+            cursor: pointer;
+            display: none;
+        }
+
+        li:hover .delete {
+            display: inline;
+        }
+
+        .filters button {
+            margin-right: 5px;
+        }
+
+        .category {
+            font-size: 12px;
+            color: blue;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Todo List</h2>
+
+<input type="text" id="taskInput" placeholder="Add Task">
+<select id="categorySelect">
+    <option>Work</option>
+    <option>Personal</option>
+</select>
+<button id="addBtn">Add</button>
+
+<div class="filters">
+    <strong>Filter:</strong>
+    <button data-filter="All">All</button>
+    <button data-filter="Work">Work</button>
+    <button data-filter="Personal">Personal</button>
+</div>
+
+<p id="counts"></p>
+
+<ul id="todoList"></ul>
+
+<script src="todo.js"></script>
+</body>
+</html>
