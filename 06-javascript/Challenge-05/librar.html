@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library System</title>
+</head>
+<body>
+
+<h2>Library System (Console Demo)</h2>
+
+<p>Open browser console to see output.</p>
+
+<script src="library.js"></script>
+<script>
+    // Demo usage (same as your example)
+
+    const library = createLibrary();
+
+    // Add books
+    library.addBook({ isbn: '123', title: '1984', author: 'Orwell', copies: 3 });
+    library.addBook({ isbn: '456', title: 'Dune', author: 'Herbert', copies: 2 });
+
+    // Add members
+    library.addMember({ id: 'M1', name: 'John', email: 'john@example.com' });
+    library.addMember({ id: 'M2', name: 'Jane', email: 'jane@example.com' });
+
+    // Borrow books
+    library.borrowBook('M1', '123');
+    library.borrowBook('M2', '123');
+
+    console.log(library.getAvailableCopies('123')); // 1
+
+    library.returnBook('M1', '123');
+
+    console.log(library.getMemberHistory('M1'));
+    console.log(library.getOverdueBooks());
+    console.log(library.searchBooks('orwell'));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Emitter Demo</title>
+</head>
+<body>
+
+<h2>Event Emitter (Pub / Sub)</h2>
+<p>Open the browser console to see the output.</p>
+
+<script src="event-emitter.js"></script>
+<script>
+    const emitter = createEventEmitter();
+
+    // Subscribe to events
+    const unsubscribe = emitter.on('userLogin', (user) => {
+        console.log(`${user.name} logged in`);
+    });
+
+    emitter.on('userLogin', (user) => {
+        console.log(`Send welcome email to ${user.email}`);
+    });
+
+    // One-time listener
+    emitter.once('appStart', () => {
+        console.log('App started - this only runs once');
+    });
+
+    // Emit events
+    emitter.emit('userLogin', { name: 'John', email: 'john@example.com' });
+
+    emitter.emit('appStart');
+    emitter.emit('appStart'); // runs only once
+
+    unsubscribe(); // remove first listener
+
+    emitter.emit('userLogin', { name: 'Jane', email: 'jane@example.com' });
+
+    emitter.off('userLogin'); // remove all listeners
+</script>
+
+</body>
+</html>
