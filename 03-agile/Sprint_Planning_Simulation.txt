@@ -1,0 +1,101 @@
+
+SPRINT PLANNING SIMULATION - AGILE / SCRUM
+
+Objective:
+Practice Agile/Scrum concepts by planning and organizing a sprint for a hypothetical project.
+
+Project: Employee Management System
+Role: Scrum Master
+Sprint Duration: 2 Weeks
+Team Velocity: 30 Story Points
+
+--------------------------------------------------
+PRODUCT BACKLOG (PRIORITIZED)
+--------------------------------------------------
+
+ID   | User Story                                      | Priority | Story Points
+PB1  | Add a new employee                              | High     | 8
+PB2  | View employee details                           | High     | 5
+PB3  | Update employee details                         | High     | 8
+PB4  | Delete an employee                              | Medium   | 5
+PB5  | Search employees                                | Medium   | 5
+PB6  | Employee login                                  | Low      | 13
+PB7  | Generate reports                                | Low      | 8
+
+--------------------------------------------------
+SPRINT PLANNING – STORY SELECTION
+--------------------------------------------------
+
+Team Velocity: 30 Story Points
+
+Selected Stories:
+PB1 (8 points)
+PB2 (5 points)
+PB3 (8 points)
+PB4 (5 points)
+
+Total Selected Points: 26
+
+PB5 was not selected because it exceeds sprint velocity.
+
+--------------------------------------------------
+SPRINT GOAL
+--------------------------------------------------
+
+Enable admins to fully manage employee records:
+Add, View, Update, and Delete employees.
+
+--------------------------------------------------
+TASK BREAKDOWN
+--------------------------------------------------
+
+PB1: Add Employee
+- Design employee form
+- Backend API
+- Database table
+- Input validation
+- Testing
+
+PB2: View Employee
+- Fetch employee API
+- UI list page
+- Testing
+
+PB3: Update Employee
+- Edit form UI
+- Update API
+- Validation
+- Testing
+
+PB4: Delete Employee
+- Delete API
+- Confirmation popup
+- Testing
+
+--------------------------------------------------
+DEFINITION OF DONE
+--------------------------------------------------
+
+A user story is considered DONE when:
+- Code is completed and reviewed
+- Unit testing is done
+- No critical bugs
+- Feature deployed to test environment
+- Product Owner approval received
+
+--------------------------------------------------
+SPRINT ACTIVITIES
+--------------------------------------------------
+
+- Daily Scrum (15 minutes)
+- Sprint Review (Demo)
+- Sprint Retrospective (Improvement discussion)
+
+--------------------------------------------------
+INTERVIEW KEY POINT
+--------------------------------------------------
+
+Sprint planning involves selecting high-priority backlog items based on team velocity,
+defining a sprint goal, breaking stories into tasks, and committing as a team.
+
+END OF DOCUMENT
