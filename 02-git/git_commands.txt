@@ -1,0 +1,63 @@
+
+GIT COMMANDS - BEGINNER GUIDE
+
+1. Check Git Version
+git --version
+
+2. Configure Git (One Time Setup)
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+3. Initialize a Repository
+git init
+
+4. Check Status
+git status
+
+5. Add Files to Staging Area
+git add filename
+git add .
+
+6. Commit Changes
+git commit -m "Your commit message"
+
+7. View Commit History
+git log
+git log --oneline
+
+8. Connect to Remote Repository
+git remote add origin repository_url
+
+9. Push Code to GitHub
+git push origin main
+
+10. Pull Code from GitHub
+git pull origin main
+
+11. Clone Repository
+git clone repository_url
+
+12. Create New Branch
+git branch branch_name
+
+13. Switch Branch
+git checkout branch_name
+git checkout -b new_branch_name
+
+14. Merge Branch
+git merge branch_name
+
+15. Delete Branch
+git branch -d branch_name
+
+16. Undo Changes
+git checkout -- filename
+git reset filename
+
+17. Remove File
+git rm filename
+
+18. Show Differences
+git diff
+
+END OF FILE
