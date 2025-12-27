@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="app">
+  <header class="header">
+    <h1>My App</h1>
+    <nav>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="card" data-id="1">
+      <h2>Card Title</h2>
+      <p>Card content here</p>
+    </article>
+
+    <article class="card" data-id="2">
+      <h2>Another Card</h2>
+      <p>More content</p>
+    </article>
+  </main>
+</div>
+
+<script src="dom-events.js"></script>
+
+
+<!-- 2 Problem  Create & Append Elements -->
+
+<script src="dom-events.js"></script>
+<!-- 3 Modify Existing Elements -->
+
+<div id="box" class="container">Hello</div>
+
+<!-- 4 Remove & Replace -->
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<!--5-Button Events -->
+<button id="btn">Click Me</button>
+
+
+<!-- 6 Form Event -->
+
+<form id="search-form">
+  <input id="search-input" />
+  <button>Search</button>
+</form>
+
+<!--7 Event Delegation -->
+
+
+<ul id="todo-list">
+  <li>Task 1 <button class="delete">X</button></li>
+  <li>Task 2 <button class="delete">X</button></li>
+</ul>
+
+
+<!-- 8 Keyboard Events-->
+
+<div id="modal" class="show">Modal</div>
+<input />
+
+<!-- 9 Counter-->
+ <div id="counter">
+  <button id="decrement" disabled>-</button>
+  <span id="count">0</span>
+  <button id="increment">+</button>
+</div>
+
+<!-- 10 Toggle Visibility-->
+ <button id="toggle-btn">Show Details</button>
+<div id="details" class="hidden">Hidden Info</div>
+
+<style>
+.hidden { display: none; }
+</style>
+
+<!-- 11 Form Validation -->
+ <form id="signup-form">
+  <input id="username" />
+  <span id="username-error"></span>
+
+  <input id="email" />
+  <span id="email-error"></span>
+
+  <button>Submit</button>
+</form>
+
+
+
+
+
+</body>
+</html>
